@@ -11,7 +11,7 @@ function App() {
       <header className="App-header">
           Silk Site
       </header>
-        <div>
+        <div className="siteStructure">
             <PinkSilk/>
             <WhiteSilk/>
             <GreySilk/>
