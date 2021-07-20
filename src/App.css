@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #E7E1C5;
+  background-color: #F5F5F5;
 }
 
 .siteStructure {
@@ -13,16 +13,40 @@
   width:80%;
 }
 
-.App-header {
-  min-height: 20vh;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  font-size: calc(10px + 2vmin);
+/*
+.hamburger {
+  width:40px;
+  height: 35px;
+  border: 0;
+  border-top: 5px solid #0A0A0A;
+  background: transparent;
+  position: relative;
+  transition: 0.3s transform linear;
 }
+
+.hamburger::before, .hamburger::after {
+  content:'';
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid #0A0A0A;
+  transform: translateY(10px);
+}
+
+.hamburger::after {
+  transform: translateY(25px);
+  transition: 0.3s transform linear;
+}
+
+.hamburger:focus {
+  transform: rotate(45deg) translateY(5px);
+  border: none;
+}
+
+.hamburger:focus::after {
+  transform: rotate(-90deg) translateX(-10px);
+} */
 
 .modules{
   position: relative;
@@ -38,19 +62,20 @@
 
 .hoverParagraph {
    position:absolute;
-  font-weight: 400;
+   font-weight: 400;
    font-size: 200%;
    text-transform: uppercase;
    line-height: 20px;
    height: 20px;
-  z-index:1;
-  color:transparent;
-  padding-top: 30px;
-  margin:0;
+   z-index:1;
+   color:transparent;
+   padding-top: 30px;
+   margin:0;
 }
 
 img:hover ~ p.hoverParagraph {
-  color:white;
+  color:#0A0A0A;
+  font-weight: 500;
 }
 
 img {

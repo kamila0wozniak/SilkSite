@@ -1,16 +1,15 @@
 import './App.css';
-import PinkSilk from './components/PinkSIlk'
-import WhiteSilk from './components/WhiteSilk'
-import GreySilk from './components/GreySilk'
-import BlueSilk from './components/BlueSilk'
+import PinkSilk from './components/PinkSIlk';
+import WhiteSilk from './components/WhiteSilk';
+import GreySilk from './components/GreySilk';
+import BlueSilk from './components/BlueSilk';
+import Header from './components/Header';
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-          Silk Site
-      </header>
+        <Header/>
         <div className="siteStructure">
             <PinkSilk/>
             <WhiteSilk/>
