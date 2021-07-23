@@ -1,12 +1,26 @@
 import React from 'react'
+import { BrowserRouter as Router,
+    Link,
+    Switch,
+    Route} from  "react-router-dom";
+
+import AboutGrey from './AboutGrey'
 
 export default function GreySilk() {
     return(
-        <div className="modules">
-            <a>
-                <img src="/img/greysilk.jpg"/>
-                <p className="hoverParagraph">grey</p>
-            </a>
-        </div>
+        <Router>
+            <div className="modules">
+                <Link to="/grey">
+                    <img src="/img/greysilk.jpg"/>
+                    <p className="hoverParagraph">grey</p>
+                </Link>
+
+            <Switch>
+                <Route path="/grey">
+                    <AboutGrey/>
+                </Route>
+            </Switch>
+            </div>
+        </Router>
     )
 }
