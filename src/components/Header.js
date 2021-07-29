@@ -1,28 +1,29 @@
-import React from 'react'
-import styles from './Header.module.css'
+import React,  { useState } from 'react';
+import styles from './Header.module.css';
+import {Link} from "react-router-dom";
+
 
 export default function Header() {
+
+    const[ isMenuOpen, setIsMenuOpen ] = useState(true);
+
+
     return(
         <div>
             <div className={styles.menuWrap}>
-                <input type="checkbox" className={styles.toggler}/>
-                <div className={styles.hamburger}><div></div></div>
-                <div className={styles.menu}>
-                    <div>
-                        <div>
-                            <ul>
-                                <li><a href="#">pink</a></li>
-                                <li><a href="#">white</a></li>
-                                <li><a href="#">grey</a></li>
-                                <li><a href="#">blue</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <div className={styles.hamburger} onClick={() => setIsMenuOpen(!isMenuOpen)}><div>dupa</div></div>
+                {isMenuOpen && <div className={styles.menu}>
+                    <ul>
+                        <li><Link to="/pink">pink</Link></li>
+                        <li><Link to="/white">white</Link></li>
+                        <li><Link to="/grey">grey</Link></li>
+                        <li><Link to="/blue">blue</Link></li>
+                    </ul>
+                </div>}
             </div>
             <header className={styles.showcase}>
                 <div className={styles.header}>
-                    <h1>Silk Site</h1>
+                    <h1><Link to="/">Silk Site</Link></h1>
                 </div>
             </header>
         </div>
