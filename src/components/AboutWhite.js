@@ -4,7 +4,8 @@ import React from 'react'
 export default function AboutWhite() {
     return(
         <div>
-            <p>white</p>
+            <img src="/img/whitesilk.jpg"/>
+            <p className="hoverParagraph">blue</p>
         </div>
     )
 }

@@ -4,7 +4,8 @@ import React from 'react'
 export default function AboutGrey() {
     return(
         <div>
-            <p>grey</p>
+            <img src="/img/greysilk.jpg"/>
+            <p className="hoverParagraph">grey</p>
         </div>
     )
 }
