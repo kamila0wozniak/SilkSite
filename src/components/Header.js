@@ -11,7 +11,7 @@ export default function Header() {
     return(
         <div>
             <div className={styles.menuWrap}>
-                <div className={styles.hamburger} onClick={() => setIsMenuOpen(!isMenuOpen)}><div>dupa</div></div>
+                <div className={styles.hamburger} onClick={() => setIsMenuOpen(!isMenuOpen)}><div className={styles.hamburgerBox}>Kliknij tutaj</div></div>
                 {isMenuOpen && <div className={styles.menu}>
                     <ul>
                         <li><Link to="/pink">pink</Link></li>
@@ -22,8 +22,8 @@ export default function Header() {
                 </div>}
             </div>
             <header className={styles.showcase}>
-                <div className={styles.header}>
-                    <h1><Link to="/">Silk Site</Link></h1>
+                <div className={styles.centerHeader}>
+                    <a className={styles.header}><Link to="/">Silk Site</Link></a>
                 </div>
             </header>
         </div>
