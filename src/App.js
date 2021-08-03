@@ -22,17 +22,17 @@ function App() {
                 <div className="siteStructure">
                     <Switch>
                         <Route path="/" exact>
-                            <div>
-                                <Link to="/pink">
+                            <div className="pictureBoxes">
+                                <Link className="pictureLink" to="/pink">
                                     <PinkSilk/>
                                 </Link>
-                                <Link to="/white">
+                                <Link className="pictureLink" to="/white">
                                     <WhiteSilk/>
                                 </Link>
-                                <Link to="/grey">
+                                <Link className="pictureLink" to="/grey">
                                     <GreySilk/>
                                 </Link>
-                                <Link to="/blue">
+                                <Link className="pictureLink" to="/blue">
                                     <BlueSilk/>
                                 </Link>
                             </div>

@@ -14,7 +14,7 @@ a {
     align-items: center;
     align-content: center;
     position:relative;
-    margin-bottom: 1.5%;
+    margin-bottom: 3%;
 }
 
 
@@ -26,4 +26,10 @@ ul {
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
+    text-transform: uppercase;
+    margin:0;
+    padding-left:15px;
+    position:absolute;
+    z-index:666;
 }
+

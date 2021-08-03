@@ -13,11 +13,22 @@
   width:80%;
 }
 
+.pictureBoxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+.pictureLink {
+    width:44%;
+    padding: 3%;
+}
+
 .modules{
-  position: relative;
-  width:25vw;
-  height: 65vh;
-  padding: 30px;
+  /*padding: 30px;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,6 +56,9 @@ img:hover ~ p.hoverParagraph {
 
 img {
   width: 100%;
+    -webkit-box-shadow: 12px 29px 81px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 12px 29px 81px 0 rgba(0,0,0,0.75);
+    box-shadow: 12px 29px 81px 0 rgba(0,0,0,0.75);
 }
 
 a {
@@ -76,6 +90,10 @@ a:hover{
     -webkit-box-shadow: 12px 29px 81px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 12px 29px 81px 0 rgba(0,0,0,0.75);
     box-shadow: 12px 29px 81px 0 rgba(0,0,0,0.75);
+}
+
+.centerAboutSectionImg:hover {
+    transform:scale(1.02);
 }
 
 .centerAboutSectionParagraph {
