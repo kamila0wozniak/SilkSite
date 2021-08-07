@@ -12,6 +12,7 @@ import AboutPink from "./components/AboutPink";
 import AboutWhite from "./components/AboutWhite";
 import AboutGrey from "./components/AboutGrey";
 import AboutBlue from "./components/AboutBlue";
+import Footer from './components/Footer';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
                         <Route path="/blue"><AboutBlue/></Route>
                     </Switch>
                 </div>
+            <Footer/>
         </div>
       </Router>
   );

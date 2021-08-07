@@ -3,6 +3,12 @@ a {
     text-decoration: none;
 }
 
+.headerBackground {
+    background-color: #C5E0FB;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #B3D6FA;
+}
+
 .centerHeader {
     font-size: 6vh;
     text-transform: uppercase;

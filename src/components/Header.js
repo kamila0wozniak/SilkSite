@@ -11,7 +11,7 @@ export default function Header() {
 
 
     return(
-        <div>
+        <div className={styles.headerBackground}>
             <div className={styles.menuWrap}>
                 <div className={styles.hamburger} onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     <Hamburger toggled={isOpen} toggle={setOpen} size={21}/>
