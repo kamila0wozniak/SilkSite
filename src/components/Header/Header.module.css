@@ -4,13 +4,25 @@ a {
 }
 
 .headerBackground {
-    background-color: #C5E0FB;
+    background-color: #FAFFFD;
+    height: 6%;
     padding-bottom: 3px;
-    border-bottom: 2px solid #B3D6FA;
+    border-bottom: 1.5px solid #EBE9ED;
+}
+
+.centerHeaderContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width:80%;
+    margin: 0 auto;
 }
 
 .centerHeader {
-    font-size: 6vh;
+    font-size: 3vh;
     text-transform: uppercase;
     color:#0A0A0A;
     font-weight: 400;

@@ -3,16 +3,16 @@ import PinkSilk from './components/PinkSIlk';
 import WhiteSilk from './components/WhiteSilk';
 import GreySilk from './components/GreySilk';
 import BlueSilk from './components/BlueSilk';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import { BrowserRouter as Router,
     Link,
     Switch,
     Route} from  "react-router-dom";
-import AboutPink from "./components/AboutPink";
-import AboutWhite from "./components/AboutWhite";
-import AboutGrey from "./components/AboutGrey";
-import AboutBlue from "./components/AboutBlue";
-import Footer from './components/Footer';
+import AboutPink from "./components/About/AboutPink";
+import AboutWhite from "./components/About/AboutWhite";
+import AboutGrey from "./components/About/AboutGrey";
+import AboutBlue from "./components/About/AboutBlue";
+import Footer from './components/Footer/Footer';
 
 
 function App() {
